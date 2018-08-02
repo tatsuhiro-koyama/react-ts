@@ -1,0 +1,43 @@
+.progress {
+}
+
+.progress .loader {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+}
+.progress .loader::before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -100px;
+  width: 100px;
+  height: 4px;
+  background-color: #2980b9;
+  animation: progress-loading 2s linear infinite; 
+}
+
+@keyframes progress-loading {
+  from {
+    left: -100px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+

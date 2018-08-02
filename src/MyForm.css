@@ -1,0 +1,19 @@
+.my-form .my-input {
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #666666;
+  box-shadow: 0 1px 5px 0 #bbb;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 1;
+  padding: 0.5em 1em;
+  text-align: left;
+  text-shadow: 0px 1px 1px #ffffff;
+  width: 160px;
+}
+
+.my-form > * {
+  margin: 0.5em 0;
+}
